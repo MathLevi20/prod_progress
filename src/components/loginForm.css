@@ -1,0 +1,87 @@
+:root {
+    --singup-logo: 35%;
+    --singup-button: 25%;
+    --singup-textbox: 90%;
+    --font-title-project: medium;
+    --icon-img-card: 20vw;
+    --font-nav: 63%;
+    --notification-padding: 10%;
+
+}
+
+@media (min-width: 800px) {
+    :root {
+        --singup-logo: 100%;
+        --singup-button: 20%;
+        --singup-textbox: 70%;
+        --font-title-project: x-large;
+        --icon-img-card: 7vw;
+        --font-nav: 100%;
+        --notification-padding: 25%;
+
+    }
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #8022C9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: auto;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img {
+    padding: 3vh;
+    width: 30%;
+    height: 30%;
+    border-radius: 25px;
+}
+
+.input-text {
+    color: #fff;
+    width: 90%;
+    height: 5vh;
+    margin: 5px;
+    background-color: #ADADAD;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+    font-size: large;
+    padding: 5px 10px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+.box button {
+    width: 70%;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #ADADAD;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    font-size: medium;
+    font-family: 'Fira sans', sans-serif;
+}
+.box button:hover{
+    background-color: #636363;
+}
+
+.botoes {
+    display: flex;
+    width: 90%;
+    margin: 1vh;
+}

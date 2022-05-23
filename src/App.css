@@ -19,7 +19,7 @@ body {
 
 .App {
 	color: var(--light);
-	text-align: center;
+	/*text-align: center;*/
 }
 
 h1 {

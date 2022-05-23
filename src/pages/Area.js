@@ -1,4 +1,6 @@
 import React from 'react';
+import Navbar from './../components/Navbar';
+import './defalt.css';
 import { db } from "../components/firebase-config";
 import { useState, useEffect } from "react";
 import {
@@ -128,6 +130,7 @@ function Area() {
     return (
 
         <div className="App">
+            <Navbar />
             <div>
                 <h1>Lista</h1>
                 <button onClick={() => setPopupActive(!popupActive)}>Add Coluna</button>
