@@ -1,18 +1,30 @@
 import React from 'react';
+import { useRef } from 'react'
 import './loginForm.css'
 import logo from "./logo.png"
+import { singup } from './firebase-config';
 const SingUpForm = () => {
+    const emailRef = useRef();
+    const passwordRef = useRef();
+
+    async function handleSingup() {
+        try {
+            await singup(emailRef.current.value, passwordRef.current.value);
+            alert('registred')
+        } catch{
+            alert('Something wrong was happened')
+        }
+        window.location = "/login"
+    }
     return (
-        <div class="container">
-            <div class="box">
+        <div className="container">
+            <div className="box">
                 <img src={logo} alt="Logo" />
-                <input type="text" class="input-text" placeholder="E-mail"></input>
-                <input type="text" class="input-text" placeholder="Senha"></input>
-                <input type="text" class="input-text" placeholder="Repita sua Senha"></input>
-                <input type="text" class="input-text" placeholder="Nome de Usuário"></input>
+                <input ref={emailRef} type="text" className="input-text" placeholder="E-mail"></input>
+                <input ref={passwordRef} type="password" className="input-text" placeholder="Senha"></input>
                 <div className='botoes'>
-                    <button type="button" onclick="window.location.href = 'areadetrabalho.html'">Cancel</button>
-                    <button type="button" onclick="window.location.href = 'singup.html'">Register</button>
+                    <button type="button" >Cancel</button>
+                    <button type="button" onClick={handleSingup}>Register</button>
                 </div>
             </div>
         </div>
