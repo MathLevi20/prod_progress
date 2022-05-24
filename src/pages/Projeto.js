@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './../components/Navbar';
 import SearchBar from './../components/Searchbar';
+import Projetos from './../components/Projetos';
 import './defalt.css';
 
 const Shop = () => {
@@ -8,6 +9,7 @@ const Shop = () => {
         <div>
             <Navbar />
             <SearchBar />
+            <Projetos />
         </div>
     )
 }
