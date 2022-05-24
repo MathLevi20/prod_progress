@@ -1,0 +1,131 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+
+:root {
+    --botao-tamanho: 20vw;
+    --foto-tamanho: 20vw;
+
+}
+
+@media (max-width: 800px) {
+    :root {
+        --botao-tamanho: 50vw;
+        --foto-tamanho: 40vw;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, #E15481, #5A62FF, #E15481);
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .download {
+        background-color: green;
+    }
+}
+
+.topo {
+    width: var(--botao-tamanho)*1.5;
+    height: 10vh;
+    background-color: #381AE5;
+    margin-top: 0;
+    box-shadow: 0 0 0.5em black;
+}
+
+.Waifu {
+    margin-top: 15vh;
+}
+
+.Waifu {
+    display: block;
+    width: var(--foto-tamanho);
+    height: var(--foto-tamanho);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    height: 40vh;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Supermercado One', cursive, "Bauhaus 93", sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    font-weight: 800;
+    font-size: 7vh;
+    color: white;
+}
+
+.pergunta {
+    text-align: center;
+    font-family: Roboto, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    font-weight: 800;
+    font-size: 5vh;
+    color: white;
+    margin: 3vh;
+}
+
+.interacao {
+    text-align: center;
+    height: 15vh;
+}
+
+.download {
+    text-align: center;
+    background-color: #1a6ce5;
+    width: var(--botao-tamanho);
+    height: 10vh;
+    font-size: 175%;
+    border-radius: 40px;
+    color: #fff;
+    font-family: 'Supermercado One', cursive, "Bauhaus 93", sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 0 0.5em black;
+    transition-duration: 0.7s;
+    -webkit-transition-duration: 0.7s;
+}
+
+.download:hover {
+    background-color: #E15481;
+    color: #fff;
+}
+
+section {
+    background-color: #381AE5;
+    /*#381AE5*/
+    box-shadow: 0 0 0.5em black;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+section h1 {
+    font-family: Roboto, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    font-weight: 800;
+    font-size: 3.5vh;
+    color: white;
+    padding-left: 10vw;
+    padding-top: 3vw;
+    padding-right: 10vw;
+}
+
+section h3 {
+    font-family: Roboto, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+    font-weight: 500;
+    color: white;
+    font-size: 2.7vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 1vw;
+    text-align: justify;
+    padding-bottom: 5vh;
+}
