@@ -11,7 +11,7 @@ const SingUpForm = () => {
         try {
             await singup(emailRef.current.value, passwordRef.current.value);
             alert('registred')
-        } catch{
+        } catch {
             alert('Something wrong was happened')
         }
         window.location = "/login"
