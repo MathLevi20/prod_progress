@@ -18,29 +18,30 @@ const LoginForm = () => {
 
     const login = async () => {
         try {
-            const user = await signInWithEmailAndPassword(
-                auth,
-                loginEmail,
-                loginPassword
-            );
+          const user = await signInWithEmailAndPassword(
+            auth,
+            loginEmail,
+            loginPassword
+          );
+          console.log(user._tokenResponse);
         } catch (error) {
-            console.log(error.message);
+          console.log(error.message);
         }
-    };
+      };
     return (
-        <div class="container">
-            <div class="box">
+        <div className="container">
+            <div className="box">
                 <img src={logo} alt="Logo" />
-                <input type="text" class="input-text" placeholder="E-mail" onChange={(event) => {
+                <input type="text" className="input-text" placeholder="E-mail" onChange={(event) => {
                     setLoginEmail(event.target.value);
                 }} />
-                <input type="text" class="input-text" placeholder="Senha" onChange={(event) => {
+                <input type="text" className="input-text" placeholder="Senha" onChange={(event) => {
                     setLoginPassword(event.target.value);
                 }} />
                 <div className='botoes'>
                     <button type="button" onClick={login}>Login</button>
                     <button type="button">Help</button>
-                    <button type="button" onclick="window.location.href = 'singup.html'">SingUp</button>
+                    <button type="button" onClick="window.location.href = 'singup.html'">SingUp</button>
                 </div>
             </div>
         </div>
