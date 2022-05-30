@@ -35,7 +35,7 @@ const LoginForm = () => {
                 <input type="text" className="input-text" placeholder="E-mail" onChange={(event) => {
                     setLoginEmail(event.target.value);
                 }} />
-                <input type="text" className="input-text" placeholder="Senha" onChange={(event) => {
+                <input type="password" className="input-text" placeholder="Senha" onChange={(event) => {
                     setLoginPassword(event.target.value);
                 }} />
                 <div className='botoes'>

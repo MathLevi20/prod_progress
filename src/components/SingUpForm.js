@@ -23,7 +23,7 @@ const SingUpForm = () => {
                 <input ref={emailRef} type="text" className="input-text" placeholder="E-mail"></input>
                 <input ref={passwordRef} type="password" className="input-text" placeholder="Senha"></input>
                 <div className='botoes'>
-                    <button type="button" >Cancel</button>
+                    <button type="button" onClick="window.location.href = './'">Cancel</button>
                     <button type="button" onClick={handleSingup}>Register</button>
                 </div>
             </div>
